@@ -126,7 +126,7 @@ declare namespace mendix {
         }
         
         class ValidationError {
-            constructor(public original: object);
+            constructor(original: object);
         }
 
         namespace dataSource {
