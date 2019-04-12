@@ -691,7 +691,13 @@ declare namespace mx {
         /**
          * Shows a confirmation dialog before calling a given function.
          */
-        confirmation(args: { content: string, proceed: string, cancel: string, handler: () => void }): void;
+        confirmation(args: {
+            content: string,
+            proceed: string,
+            cancel: string,
+            handler: () => void,
+            onCancel: () => void
+        }): void;
         /**
          * Shows an error message.
          */
